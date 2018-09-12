@@ -9,12 +9,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App container-fluid">
-          <Header />
-          <HowItWorks />
-          <MatchRate />
-          <Ats />
-          <Keyword />
+      <div>
+        <Header />
+        <HowItWorks />
+        <MatchRate />
+        <Ats />
+        <Keyword />
       </div>
       
     );

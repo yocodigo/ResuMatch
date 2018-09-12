@@ -28,12 +28,12 @@ class Header extends Component {
     console.log(this.props);
     return (
       <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
+        <div class="nav-wrapper white">
+          <a href="#" class="brand-logo indigo-text text-darken-4">IdealApplicant</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+          <li><a href="sass.html"><span class="indigo-text text-darken-4">Match Rate</span></a></li>
+            <li><a href="badges.html"><span class="indigo-text text-darken-4">ATS Match</span></a></li>
+            <li><a href="collapsible.html"><span class="indigo-text text-darken-4">Keyword Comparison</span></a></li>
           </ul>
         </div>
       </nav>
