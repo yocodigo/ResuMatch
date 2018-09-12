@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import Jumbotron from './components/jumbotron/jumbotron';
+import Header from './components/Header';
+import HowItWorks from './components/howitworks/howitworks';
+import MatchRate from './components/matchrate/matchrate';
+import Ats from './components/ats/ats';
+import Keyword from './components/keyword/keyword';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App container-fluid">
-        
-          <Jumbotron/>
-              
+          <Header />
+          <HowItWorks />
+          <MatchRate />
+          <Ats />
+          <Keyword />
       </div>
       
     );
