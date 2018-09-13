@@ -2,18 +2,11 @@ import React from 'react';
 import Background from '../../images/bubbles.png';
 
 const HowItWorks = props => (
-  <div style={{background: '#F2F2F2', backgroundImage: "url(" + Background + ")", height: "950px"}}>
-    <h1 className="display-4 indigo-text text-darken-4">HOW IT WORKS</h1>
-    <p className="lead indigo-text text-darken-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <br/>
-    {/*<button  type="button" className="btn btn-primary">
-      <Upload />
-</button> */}    
- {/*   <div className="jumbotron">
-      <h1 className="display-4">MATCH RATE</h1>
-      <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>  */}
-  </div>
+  <section style={{backgroundImage: "url(" + Background + ")", backgroundSize: 'cover', width: '100%', height: '800px'}}>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <h1 className="center-align display-4 indigo-text text-darken-4">HOW IT WORKS</h1>
+    <p className="center-align lead indigo-text text-darken-4">We calculate your match rate and let you know how to optimize your resume</p>
+  </section>
 );
 
 export default HowItWorks;
