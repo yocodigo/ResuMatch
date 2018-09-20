@@ -1,5 +1,4 @@
 import React from 'react';
-import Upload from '../form/upload';
 
 const Keyword = props => (
   <div style={{background: '#46D6F7', backgroundSize: 'cover', width: '100%', height: '750px'}}>

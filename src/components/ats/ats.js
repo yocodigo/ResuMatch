@@ -1,5 +1,4 @@
 import React from 'react';
-import Upload from '../form/upload';
 
 const Ats = props => (
   <div style={{background: '#F2F2F2', backgroundSize: 'cover', width: '100%', height: '750px'}}>

@@ -1,9 +1,4 @@
 import React from 'react';
-import Upload from '../form/upload';
-
-const styles = {
-  paddingLeft: '30px'
-}
 
 const MatchRate = props => (
   <div style={{backgroundSize: 'cover', width: '100%', height: '750px'}}>
