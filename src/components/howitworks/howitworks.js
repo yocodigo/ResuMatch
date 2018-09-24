@@ -1,12 +1,12 @@
 import React from 'react';
-import Button from '../button/button';
-import Title from './title';
+import './index.css'
 
 const HowItWorks = props => (
-  <div class='row'>
-     <Title class='col 12' /> 
-     <Button class='col 12' />
-  </div>
+  <section>
+     <h1>HOW IT WORKS</h1>
+     <p>We calculate your match rate and let you know how to optimize your resume</p> 
+     <button><h3>Resume</h3></button>
+  </section>
 );
 
 export default HowItWorks;
