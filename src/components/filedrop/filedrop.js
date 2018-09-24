@@ -6,22 +6,25 @@ import Button from '../button/button';
 const FileDrop = () => {
 
   let fileReader;
+  let parsedWords = [];
 
   const handleFileRead = (e) => {
     // const content = fileReader.result;
     const content = e.target.result;
     // const content = e.target;
-    console.log(content);
+
+    parsedWords = content.split(' ');
+    console.log(parsedWords);
   };
 
   const handleOnDrop = (acceptedFiles, rejectedFiles) => {
-    console.log(acceptedFiles);
+    // console.log(acceptedFiles);
       fileReader = new FileReader();
       fileReader.onload = handleFileRead;
       
       // fileReader.readAsText(acceptedFiles);
       fileReader.readAsText(acceptedFiles[0]);
-      console.log('rejected files: ', rejectedFiles);
+      // console.log('rejected files: ', rejectedFiles);
     };
 
   // render() {
