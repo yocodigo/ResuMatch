@@ -24,7 +24,7 @@ const FileDrop = () => {
       
       // fileReader.readAsText(acceptedFiles);
       fileReader.readAsText(acceptedFiles[0]);
-      // console.log('rejected files: ', rejectedFiles);
+      console.log('rejected files: ', rejectedFiles);
     };
 
   // render() {
