@@ -1,22 +1,6 @@
 import React from 'react';
 import './index.css'
-
-function compare(str1){
-  const obj = str1.split(' ').reduce((map, item) => {
-    if(map[item]){
-      map[item] = true
-    }
-    return map
-  }, {})
-  return function(str2){
-    return str2.split(' ').reduce((acc, item) => {
-      if(obj[item]){
-        acc++
-      }
-      return acc
-    }, 0) * 100 / str1.length
-  }
-}
+import compare from '../../compare'
 
 class HowItWorks extends React.Component {
   constructor(props){
@@ -42,7 +26,7 @@ class HowItWorks extends React.Component {
   }
 
   onClick(){
-    document.querySelector('.result').textContent = this.compareTo(this.text)
+    document.querySelector('.result').textContent = this.compareTo(this.text) + "%"
   }
 
   render(){

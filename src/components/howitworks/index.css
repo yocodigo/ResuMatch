@@ -46,6 +46,7 @@ input {
 }
 
 .result {
-  font-size: 20px;
+  font-size: 40px;
   font-style: bold;
+  padding: 20px;
 }
