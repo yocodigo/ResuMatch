@@ -1,11 +1,28 @@
 import React from 'react';
 import './index.css'
 
+function compare(str1){
+  const obj = str1.split(' ').reduce((map, item) => {
+    if(map[item]){
+      map[item] = true
+    }
+    return map
+  }, {})
+  return function(str2){
+    return str2.split(' ').reduce((acc, item) => {
+      if(obj[item]){
+        acc++
+      }
+      return acc
+    }, 0) * 100 / str1.length
+  }
+}
+
 class HowItWorks extends React.Component {
   constructor(props){
     super(props)
-    this.fileUpload = null
-    this.requirements = null
+    this.compareTo = null
+    this.text = null
 
     this.onChange = this.onChange.bind(this)
     this.onFile = this.onFile.bind(this)
@@ -13,16 +30,19 @@ class HowItWorks extends React.Component {
   }
 
   onChange(e){
-    this.requirements = e.target.value
+    this.compareTo = compare(e.target.value)
   }
 
-  onFile(e){
-    this.fileUpload = e.target.files
+  onFile(evt){
+    const reader = new FileReader()
+    reader.onload = e => {
+      this.text = e.target.result
+    }
+    reader.readAsText(evt.target.files[0])
   }
 
   onClick(){
-    document.querySelector('textarea').textContent = ''
-    document.querySelector('.result').textContent = 'Hello'
+    document.querySelector('.result').textContent = this.compareTo(this.text)
   }
 
   render(){
