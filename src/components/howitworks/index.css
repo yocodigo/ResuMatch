@@ -49,3 +49,9 @@ input {
   font-style: bold;
   color: lightskyblue;
 }
+
+@media only screen and (max-width: 700px) {
+  .matching {
+    flex-direction: column;
+  }
+}
