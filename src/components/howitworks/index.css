@@ -3,18 +3,18 @@ button {
   border-radius: 15px;
   outline: none;
   background-color: lightblue;
-  margin-top: 20px;
 }
 
 textarea, .drag_and_drop {
   width: 300px;
   height: 100px;
-  margin: 20px 20px;
+  margin: 20px;
 }
 textarea {
   outline: none;
-  border: 1px solid black;
+  border: none;
 }
+
 .drag_and_drop {
   position: relative;
   background-color: white;
@@ -35,7 +35,6 @@ textarea {
 
 input {
   position: absolute;
-  border: 1px solid red;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)
@@ -48,5 +47,5 @@ input {
 .result {
   font-size: 40px;
   font-style: bold;
-  padding: 20px;
+  color: lightskyblue;
 }
