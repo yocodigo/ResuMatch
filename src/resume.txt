@@ -1,0 +1,1 @@
+The callback ref is another way of using refs in React. To use refs in this way we set the ref property to a callback function. When we set a ref, React will call this function, passing the element as the first argument.

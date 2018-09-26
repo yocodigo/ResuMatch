@@ -3,4 +3,31 @@ button {
   border-radius: 15px;
   outline: none;
   background-color: lightblue;
+  margin-top: 20px;
+}
+
+textarea, .drag_and_drop {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 20px 20px;
+}
+textarea {
+  outline: none;
+}
+.drag_and_drop {
+  position: relative;
+  background-color: white;
+  border: 1px dashed black;
+}
+
+input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.matching {
+  display: flex;
 }
