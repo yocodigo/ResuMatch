@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css'
-import compare from '../../compare'
+import compare from '../../compare_using_hash'
 
 class HowItWorks extends React.Component {
   constructor(props){
